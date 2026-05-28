@@ -1,0 +1,40 @@
+### Criar um jogo
+POST http://localhost:3333/jogos
+Content-Type: application/json
+
+{
+    "title": "GTA 6",
+    "description": "O mais novo jogo da Rockstar Games",
+    "price": 299.90,
+    "platform": "PS5",
+    "genre": "Ação"
+}
+
+###
+
+### Listar todos os jogos
+GET http://localhost:3333/jogos
+
+###
+
+### Buscar jogo por nome
+GET http://localhost:3333/jogos?search=GTA
+
+###
+
+### Atualizar um jogo
+PUT http://localhost:3333/jogos/id-do-jogo-aqui
+Content-Type: application/json
+
+{
+    "title": "GTA 6",
+    "description": "Descrição atualizada",
+    "price": 249.90,
+    "platform": "PS5",
+    "genre": "Ação"
+}
+
+###
+
+### Deletar um jogo
+DELETE http://localhost:3333/jogos/id-do-jogo-aqui
