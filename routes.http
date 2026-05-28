@@ -3,11 +3,11 @@ POST http://localhost:3333/jogos
 Content-Type: application/json
 
 {
-    "title": "GTA 6",
+    "title": "overwatch",
     "description": "O mais novo jogo da Rockstar Games",
-    "price": 299.90,
-    "platform": "PS5",
-    "genre": "Ação"
+    "price": 20,
+    "platform": "PS4",
+    "genre": "Luta"
 }
 
 ###
@@ -23,18 +23,18 @@ GET http://localhost:3333/jogos?search=GTA
 ###
 
 ### Atualizar um jogo
-PUT http://localhost:3333/jogos/id-do-jogo-aqui
+PUT http://localhost:3333/jogos/c809aec3-39f9-4826-872a-7d5c6febeeed
 Content-Type: application/json
 
 {
-    "title": "GTA 6",
+    "title": "GTA 5",
     "description": "Descrição atualizada",
-    "price": 249.90,
-    "platform": "PS5",
+    "price": 70.00,
+    "platform": "PS4",
     "genre": "Ação"
 }
 
 ###
 
 ### Deletar um jogo
-DELETE http://localhost:3333/jogos/id-do-jogo-aqui
+DELETE http://localhost:3333/jogos/0377cde3-50cb-439e-a1f6-0e6b2fddc59c
